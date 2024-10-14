@@ -55,6 +55,7 @@ stages:
         archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
         replaceExistingArchive: true
 
+
     - upload: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
       displayName: 'Upload package'
       artifact: drop
@@ -83,5 +84,4 @@ stages:
             inputs:
               azureSubscription: $(azureServiceConnectionId)
               appName: $(webAppName)
-              package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
-              appSettings: '-WEBSITE_HOSTNAME "testappser.kro.kr"'
+              package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip    
