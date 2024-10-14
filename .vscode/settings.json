@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/aaf6ab19-4b31-4e75-9f48-4f12ac0ef41d/resourceGroups/app-rg/providers/Microsoft.Web/sites/pipeline-delopy-nodejs",
+    "appService.deploySubpath": "."
+}
